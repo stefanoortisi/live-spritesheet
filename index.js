@@ -1,10 +1,5 @@
 #!/usr/bin/env node
 
-// http://paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
-var log=function(){log.history=log.history||[];log.history.push(arguments);if(this.console){console.log(Array.prototype.slice.call(arguments))}};
-
-
-
 _        		= require( 'lodash-node' );
 path 			= require( 'path' );
 fsu      		= require( 'fs-util' );
@@ -78,22 +73,45 @@ function compile() {
 	builder.build( function() {
 		var css_original_path = config.output_image_folder + "/" + config.output_css;
 		var css_new_path = config.output_css_folder + "/" + config.output_css;
-		
+			
 		move_css( css_original_path, css_new_path );
 
-		log( "Build from " + builder.files.length + " images. Press CTRL+C to exit." );
+		console.log( "Build from " + builder.files.length + " images. Press CTRL+C to exit." );
 	} );
 
 }
 
 
-
 function move_css( old_path, new_path ) {
 
-	
+	// Get the relative path from the old to the new path
+	var prefix_url = path.relative( path.dirname( new_path ), path.dirname( old_path ) ) + "/";
+
+	// Create a regexp for each spritesheet
+	var reg_1 = new RegExp(config.output_image,"g");
+	var reg_2 = new RegExp(config.output_image_retina,"g");
+
+	// Get the new url to update into the css
+	var new_name = prefix_url + config.output_image;
+	var new_name_retina = prefix_url + config.output_image_retina;
 
 	
-	fs.renameSync( old_path, new_path );
+	// Open the old file
+	fs.readFile( old_path, 'utf8', function (err,data) {
+		if (err) { return console.console.log(err); }
+
+		// Update the path for the images
+		var result = data.replace(reg_1, new_name);
+		result = result.replace(reg_2, new_name_retina);
+
+		// Write and rename the file
+		fs.writeFile( old_path, result, 'utf8', function (err) {
+			if (err) return console.console.log(err);
+
+			fs.renameSync( old_path, new_path );
+		});
+	});
+	
 }
 
 function get_files_from_dir( dir ) {

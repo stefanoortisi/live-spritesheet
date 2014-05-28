@@ -1,5 +1,5 @@
 .sprite {
-  background: url( 'sprite.png' ) no-repeat;
+  background: url( '../images/sprite.png' ) no-repeat;
   background-size: 118px 69px;
 }
 
@@ -46,7 +46,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-device-pixel-ratio: 2) {
 .sprite {
-  background: url( 'sprite-retina.png' ) no-repeat;
+  background: url( '../images/sprite-retina.png' ) no-repeat;
   background-size: 117.5px 69px;
 }
 
