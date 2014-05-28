@@ -1,6 +1,6 @@
-# hires-node-spritesheet
+# live-spritesheet
 
-Hires Node Spritesheet is a wrapper class for [node-spritesheet](https://github.com/richardbutler/node-spritesheet) node module.
+Live Spritesheet is a wrapper class for [node-spritesheet](https://github.com/richardbutler/node-spritesheet) node module.
 It watches into the src folder and compile the new spritesheet whenever some files change occurs.
 
 ## Requirements
