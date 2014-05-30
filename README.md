@@ -26,13 +26,23 @@ A config file looks such as:
 
 ````json
 {
-	"src_image_folder"		: "./src", # path
-	"output_css_folder"  	: "./output/css", # path
-	"output_image_folder"	: "./output/images", # path
-	"selector"  			: ".sprite", # css selector
-	"output_css"  	 		: "sprite.css", # filename
-	"output_image"  		: "sprite.png", # filename
-	"output_image_retina"	: "sprite-retina.png" # filename
+	"src_image_folder"		: "./src",
+	"output_css_folder"  	: "./output/css",
+	"output_image_folder"	: "./output/images",
+	"selector"  			: ".sprite",
+	"output_css"  	 		: "sprite.css"
+	"output_image"  		: "sprite.png"
+	"output_image_retina"	: "sprite-retina.png"
 }
 ````
+
+Where:
+
+- src_image_folder (path)
+- output_css_folder (path)
+- output_image_folder (path)
+- selector (css selector)
+- output_css (filename)
+- output_image (filename)
+- output_image_retina (filename)
 
