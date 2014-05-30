@@ -44,13 +44,6 @@ watcher.on( 'change', on_change );
 watcher.on( 'delete', on_change );
 
 
-// Flush the output folder
-files = get_files_from_dir( config.output_image_folder );
-
-for( var i = 0; i < files.length; i++ ) {
-	fs.unlinkSync( files[ i ] );
-}
-
 // Compile the spritesheet
 function compile() {
 	var builder = new Builder({
