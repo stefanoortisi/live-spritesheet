@@ -15,21 +15,19 @@ You may need to install xquartz. A popup will be shown if required.
 	live-spritesheet -c <your_config>.json
 
 
-A config file look such as:
+A config file looks such as:
 
 ## config.json
 
 ````json
 {
-	"src_image_folder"		: "./src",
-	"output_css_folder"  	: "./output/css",
-	"output_image_folder"	: "./output/images",
-	"selector"  			: ".sprite",
-	"output_css"  	 		: "sprite.css",
-	"output_image"  		: "sprite.png",
-	"output_image_retina"	: "sprite-retina.png"
+	"src_image_folder"		: "./src", # path
+	"output_css_folder"  	: "./output/css", # path
+	"output_image_folder"	: "./output/images", # path
+	"selector"  			: ".sprite", # css selector
+	"output_css"  	 		: "sprite.css", # filename
+	"output_image"  		: "sprite.png", # filename
+	"output_image_retina"	: "sprite-retina.png" # filename
 }
 ````
-
-
 
