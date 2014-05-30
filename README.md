@@ -1,6 +1,7 @@
 # Live Spritesheet
 
 Live Spritesheet is a extension for [node-spritesheet](https://github.com/richardbutler/node-spritesheet) node module.
+
 It watches into the src folder and compile the new spritesheet whenever some files change occurs.
 
 ## Requirements
@@ -15,14 +16,17 @@ You may need to install xquartz. A popup will be shown if required.
 
 ## Usage
 	
-	live-spritesheet -c <your_config>.json
+	bin/live-spritesheet -c <your_config>.json
 	
 	
 
 
-A config file looks such as:
+
+
 
 ## config.json
+
+A config file looks such as:
 
 ````json
 {
