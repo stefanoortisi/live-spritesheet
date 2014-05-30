@@ -30,8 +30,8 @@ A config file looks such as:
 	"output_css_folder"  	: "./output/css",
 	"output_image_folder"	: "./output/images",
 	"selector"  			: ".sprite",
-	"output_css"  	 		: "sprite.css"
-	"output_image"  		: "sprite.png"
+	"output_css"  	 		: "sprite.css",
+	"output_image"  		: "sprite.png",
 	"output_image_retina"	: "sprite-retina.png"
 }
 ````
