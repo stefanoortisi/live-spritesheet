@@ -1,0 +1,53 @@
+.sprite {
+  background: url( 'sprite.png' ) no-repeat;
+  background-size: 118px 69px;
+}
+
+.sprite.access_bkg {
+  width: 118px;
+  height: 17px;
+  background-position: 0px 0px;
+}
+
+.sprite.footer_flags {
+  width: 90px;
+  height: 6px;
+  background-position: 0px -17px;
+}
+
+.sprite.icon_paramount {
+  width: 72px;
+  height: 31px;
+  background-position: 0px -23px;
+}
+
+.sprite.access_button {
+  width: 17px;
+  height: 17px;
+  background-position: -72px -23px;
+}
+
+.sprite.icon_credits_close {
+  width: 16px;
+  height: 16px;
+  background-position: -89px -23px;
+}
+
+.sprite.icon_facebook {
+  width: 15px;
+  height: 15px;
+  background-position: 0px -54px;
+}
+
+
+
+@media (min--moz-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2/1),
+(-webkit-min-device-pixel-ratio: 2),
+(min-device-pixel-ratio: 2) {
+.sprite {
+  background: url( '../images/sprite-retina.png' ) no-repeat;
+  background-size: 117.5px 69px;
+}
+
+}

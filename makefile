@@ -1,5 +1,10 @@
+BIN=./bin/live-spritesheet
+
 install:
 	npm install
 
-build:
-	coffee src/app.coffee
+run_simple:
+	$(BIN) -c ./example/simple/config.json
+
+run_nested:
+	$(BIN) -c ./example/nested/images/config.json
