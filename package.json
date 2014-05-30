@@ -25,7 +25,7 @@
     "node": ">= 0.10"
   },
   "dependencies": {
-    "node-spritesheet": "*",
+    "node-spritesheet": "https://github.com/stefanoortisi/live-spritesheet/tarball/master",
     "lodash-node": "*",
     "fs-util": "*",
     "minimist": "*",
