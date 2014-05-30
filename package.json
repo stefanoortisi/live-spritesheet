@@ -11,15 +11,15 @@
   "main": "index.js",
   "dirs": "src",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test"
   },
   "preferGlobal": "true",
   "bin": {
-    "live-spritesheet": "index.js"
+    "live-spritesheet": "bin/live-spritesheet"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/stefanoortisi"
+    "url": "https://github.com/stefanoortisi/live-spritesheet"
   },
   "engines": {
     "node": ">= 0.10"
