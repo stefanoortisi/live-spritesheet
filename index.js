@@ -12,15 +12,13 @@ function LiveSpritesheet() {
 	    return;
 	}
 
-	// Normalize the config file path
-	if( argv.c.indexOf( './' ) != 0 ) {
-		argv.c = './' + argv.c;
-	}
 
-	// Get the config file
+	// Normalize the config file path
+	argv.c = path.join( process.cwd(), argv.c)
+
+	// Get the config file and validate it
 	var config = require( argv.c );
 
-	
 	if( !check_filename( config.output_css ) ||
 		!check_filename( config.output_image ) ||
 		!check_filename( config.output_image_retina ) ) {
