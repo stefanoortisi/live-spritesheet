@@ -1,5 +1,12 @@
 #!/usr/bin/env node
+argv  			= require( 'minimist' )( process.argv.slice(2));
 
 LiveSpritesheet = require( "../index.js" );
 
-new LiveSpritesheet();
+live = new LiveSpritesheet();
+
+if (typeof argv.c == "undefined") {
+    console.error('ERROR: Parameter -c required.');
+} else {
+	live.watch( argv.c );
+}

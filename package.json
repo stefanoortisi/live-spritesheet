@@ -28,6 +28,13 @@
     "node-spritesheet": "*",
     "lodash-node": "*",
     "fs-util": "*",
-    "minimist": "*"
+    "minimist": "*",
+    "happens": "~0.5.0"    
+  },
+  "devDependencies": {
+    "coffee-script": "1.6.x",
+    "mocha": "1.12.x",
+    "chai": "1.7.x",
+    "chai-fs": "0.0.3"
   }
 }
