@@ -26,7 +26,7 @@ exports.test = ( live ) ->
 
     describe '[Core Functionalities]', ->
 
-        example_path = "example/simple"
+        example_path = "example/nested/images"
         config = path.join( example_path, "config.json" )
 
         it 'it should watch with no errors', (done)->
