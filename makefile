@@ -1,7 +1,7 @@
 BIN=./bin/live-spritesheet
 MOCHA=./node_modules/mocha/bin/mocha
 COFFEE=./node_modules/.bin/coffee
-VERSION=0.2.2
+VERSION=0.2.3
 
 install:
 	npm install

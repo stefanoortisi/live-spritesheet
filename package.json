@@ -1,6 +1,6 @@
 {
   "name": "live-spritesheet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Stefano Ortisi <stefanoortisi@gmail.com>",
   "description": "A live version of node-spritesheet. It will listen to files changes on a src folder",
   "keywords": [

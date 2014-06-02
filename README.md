@@ -50,3 +50,8 @@ Where:
 - output_image (filename)
 - output_image_retina (filename)
 
+
+
+## TODO
+
+- Improve error management (when files in config.json dont't exist)
