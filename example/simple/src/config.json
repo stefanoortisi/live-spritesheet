@@ -1,7 +1,7 @@
 {
-	"src_image_folder"		: "./src",
-	"output_css_folder"  	: "./output/css",
-	"output_image_folder"	: "./output/images",
+	"src_image_folder"		: "./",
+	"output_css_folder"  	: "../output/css",
+	"output_image_folder"	: "../output/images",
 	"selector"  			: ".sprite",
 	"output_css"  	 		: "sprite.css",
 	"output_image"  		: "sprite.png",

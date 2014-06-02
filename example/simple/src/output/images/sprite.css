@@ -1,0 +1,47 @@
+.sprite {
+  background: url( '../images/sprite.png' ) no-repeat;
+  background-size: 118px 40px;
+}
+
+.sprite.access_bkg {
+  width: 118px;
+  height: 17px;
+  background-position: 0 0;
+}
+
+.sprite.footer_flags {
+  width: 90px;
+  height: 6px;
+  background-position: 0 -17px;
+}
+
+.sprite.access_button {
+  width: 17px;
+  height: 17px;
+  background-position: 0 -23px;
+}
+
+.sprite.icon_credits_close {
+  width: 16px;
+  height: 16px;
+  background-position: -17px -23px;
+}
+
+.sprite.icon_facebook {
+  width: 15px;
+  height: 15px;
+  background-position: -33px -23px;
+}
+
+
+
+@media (min--moz-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2/1),
+(-webkit-min-device-pixel-ratio: 2),
+(min-device-pixel-ratio: 2) {
+.sprite {
+  background: url( '../images/sprite-retina.png' ) no-repeat;
+  background-size: 117.5px 39.5px;
+}
+
+}

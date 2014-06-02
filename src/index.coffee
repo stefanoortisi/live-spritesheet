@@ -119,7 +119,8 @@ module.exports = class LiveSpritesheet
 
 		output = [];
 		for item in files
-			if item[ 0 ] != '.' 
+
+			if item[ 0 ] != '.' and path.extname( item ) in [ '.jpg', '.png', '.jpeg' ]
 				output.push( path.join dir, item )
 
 		return output

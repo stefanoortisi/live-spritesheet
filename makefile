@@ -1,5 +1,6 @@
 BIN=./bin/live-spritesheet
 MOCHA=./node_modules/mocha/bin/mocha
+COFFEE=./node_modules/.bin/coffee
 VERSION=0.2.2
 
 install:
@@ -7,13 +8,13 @@ install:
 
 
 watch: 
-	coffee -o ./ -cw src/
+	$(COFFEE) -o ./ -cw src/
 
 build: 
-	coffee -o ./ -c src/
+	$(COFFEE) -o ./ -c src/
 
 run_simple:
-	$(BIN) -c ./example/simple/config.json
+	$(BIN) -c ./example/simple/src/config.json
 
 run_nested:
 	$(BIN) -c ./example/nested/images/config.json
