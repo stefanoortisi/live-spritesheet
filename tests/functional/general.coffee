@@ -26,19 +26,23 @@ exports.test = ( live ) ->
 
     describe '[Core Functionalities]', ->
 
-        example_path = "example/nested/images"
-        config = path.join( example_path, "config.json" )
+        path_1          = "example/nested/images"
+        path_2          = "example/simple/src"
+        
+        config          = path.join path_1, "config.json"
+        config_2        = path.join path_2, "config.json"
+        wrong_config    = path.join path_2, "wrong_config.json"
+        
 
         it 'it should watch with no errors', (done)->
             
 
-            live.events.on 'built', ->
+            live.events.once 'built', ->
 
                 assert.typeOf live.config, 'object'
                 done()
 
             live.watch config
-            live._compile()
 
 
         it 'it should have saved the output files in the right directories', (done)->
@@ -53,3 +57,25 @@ exports.test = ( live ) ->
             image_retina_path.should.be.a.path "The retina image file doesn't exists"
 
             done()
+
+        it 'it should deal with a config file in the same directory of the source images', (done)->
+            
+
+            live.events.once 'built', ->
+
+                assert.typeOf live.config, 'object'
+                done()
+
+            live.watch config_2
+
+
+
+        # it 'it should get an error if the some config path doesn\'t exists', (done) -> 
+
+
+        #     live.events.once 'built', ->
+
+        #         assert.typeOf live.config, 'object'
+        #         done()
+
+        #     live.watch wrong_config
