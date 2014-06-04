@@ -2,7 +2,7 @@ _        		= require( 'lodash-node' );
 path 			= require( 'path' );
 fsu      		= require( 'fs-util' );
 fs      		= require( 'fs' );
-Builder  		= require( 'node-spritesheet' ).Builder;
+Builder  		= require( 'node-spritesheet' ).Builder
 argv  			= require( 'minimist' )( process.argv.slice(2));
 happens 		= require 'happens'
 
@@ -58,6 +58,7 @@ module.exports = class LiveSpritesheet
 			outputCss  		: @config.output_css,
 			selector  		: @config.selector,
 			images 			: @get_files_from_dir @config.src_image_folder
+			log 			: false
 		});
 
 		builder.addConfiguration "legacy",

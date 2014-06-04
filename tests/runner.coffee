@@ -1,6 +1,6 @@
 fsu  = require 'fs-util'
 path = require 'path'
-LiveSpritesheet = require '../index.js'
+LiveSpritesheet = require '../dist/index.js'
 
 # list of test files
 files = fsu.find (path.join __dirname, 'functional'), /\.coffee$/m

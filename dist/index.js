@@ -59,7 +59,8 @@
         outputDirectory: this.config.output_image_folder,
         outputCss: this.config.output_css,
         selector: this.config.selector,
-        images: this.get_files_from_dir(this.config.src_image_folder)
+        images: this.get_files_from_dir(this.config.src_image_folder),
+        log: false
       });
       builder.addConfiguration("legacy", {
         pixelRatio: 1,

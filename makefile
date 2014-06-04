@@ -8,10 +8,10 @@ install:
 
 
 watch: 
-	$(COFFEE) -o ./ -cw src/
+	$(COFFEE) -o ./dist -cw src/
 
 build: 
-	$(COFFEE) -o ./ -c src/
+	$(COFFEE) -o ./dist -c src/
 
 run_simple:
 	$(BIN) -c ./example/simple/src/config.json

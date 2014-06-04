@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 argv  			= require( 'minimist' )( process.argv.slice(2));
 
-LiveSpritesheet = require( "../index.js" );
+LiveSpritesheet = require( "../dist/index.js" );
 
 live = new LiveSpritesheet();
 
